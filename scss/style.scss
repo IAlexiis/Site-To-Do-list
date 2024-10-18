@@ -1,21 +1,6 @@
-$color_1: #333;
-$color_2: white;
-$font-family_1: "quador-display", serif;
-$background-color_1: white;
-$background-color_2: #28a745;
-$background-color_3: #218838;
-$background-color_4: #f9f9f9;
-$background-color_5: #dc3545;
-$background-color_6: #e0e0e0;
+@import "variable";
+@import "reset";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 p {
   font-family: $font-family_1;
 }
