@@ -1,0 +1,138 @@
+$color_1: #333;
+$color_2: white;
+$font-family_1: "quador-display", serif;
+$background-color_1: white;
+$background-color_2: #28a745;
+$background-color_3: #218838;
+$background-color_4: #f9f9f9;
+$background-color_5: #dc3545;
+$background-color_6: #e0e0e0;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: $font-family_1;
+}
+h1 {
+  font-family: $font-family_1;
+  text-align: center;
+  color: $color_1;
+  padding-bottom: 20px;
+}
+h2 {
+  font-family: $font-family_1;
+}
+h3 {
+  font-family: $font-family_1;
+}
+h4 {
+  font-family: $font-family_1;
+}
+li {
+  font-family: $font-family_1;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/images/fond.jpg);
+  background-repeat: no-repeat;
+  background: linear-gradient(135deg, #f0f4f8 0%, #d9e8fc 50%, #cfd9df 100%);
+}
+.todo-container {
+  background-color: $background-color_1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  button {
+    width: 25%;
+    background-color: $background-color_2;
+    color: $color_2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    &:hover {
+      background-color: $background-color_3;
+    }
+  }
+}
+ul {
+  list-style-type: none;
+  li {
+    padding: 10px;
+    background-color: $background-color_4;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    justify-content: space-between;
+    width: 100%;
+    button {
+      background-color: $background-color_5;
+      color: $color_2;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      padding: 5px 10px;
+      &:hover {
+        background-color: $background-color_6;
+      }
+    }
+    p {
+      width: 70%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      text-align: justify;
+    }
+  }
+}
+.button-container {
+  display: flex;
+}
+.delete-button {
+  background-color: $background-color_4;
+}
+.modify-button {
+  background-color: $background-color_4;
+}
+.save-button {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 5px;
+}
+
+.input-edit {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
